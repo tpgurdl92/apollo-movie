@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import {HashRouter as Router, Route} from 'react-router-dom';
+import Home from './routes/Home';
+import Detail from './routes/Detail';
+import GlobalStyles from "./GlobalStyles";
 function App() {
   return (
-    <div className="App">
-          Edit and save to reload.
-        </div>
+    
+      <Router>
+        <GlobalStyles/>
+        <Route exact path="/:status" component={Home}/>
+        <Route  path="/:status/:id" component={Detail}/ >
+      </Router> 
+    
   );
 }
 
