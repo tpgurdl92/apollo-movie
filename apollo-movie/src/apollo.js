@@ -1,5 +1,5 @@
 import ApolloClient from "apollo-boost";
-
+//sinjoonyong
 const client = new ApolloClient({
     uri :"http://localhost:4000/",
     resolvers:{
