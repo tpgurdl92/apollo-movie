@@ -134,7 +134,7 @@ export default ({
             <span role="img" aria-label="rating">
               ⭐
             </span>
-            {rate}/10
+            {rate}/100
           </Rating>
         </Link>
       </ImgContainer>
